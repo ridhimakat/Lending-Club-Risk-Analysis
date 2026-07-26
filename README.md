@@ -6,14 +6,14 @@
 LendingClub is a peer-to-peer lender meaning investors fund loans, borrowers repay principal plus interest, and the lender profits only if enough loans are repaid to offset the ones that default. Assuming the role as a credit analyst, I set out to find where losses concentrate across the loan book and how approval criteria could reduce them without sacrificing too much lending volume.
 
 ## The question
-*Which borrower segments drive our loan losses, and how should we adjust approval criteria to cut the default rate without killing loan volume?*
+Which borrower segments drive our loan losses, and how should we adjust approval criteria to cut the default rate without killing loan volume?
 
-## Data
-- Source: LendingClub public loan data — 2.26M loans total, scoped to **791,537 loans issued 2013–2015**.
+## Source
+LendingClub public loan data from kaggle, 2.26M loans total, scoped to **791,537 loans issued 2013–2015**.
 
 ## Data Cleaning
 
-I labeled Charged Off/ Default/Late (31–120 days) as *bad* loans and Fully Paid as *good*, and excluded still-open (Current) loans
+I labeled Charged Off/ Default/Late (31–120 days) as bad loans and Fully Paid as good, and excluded still-open (Current) loans
 59,929 of them, since an active loan hasn't yet had its chance to default. Counting them would have understated risk.
 
 The raw data required real cleaning before analysis:
